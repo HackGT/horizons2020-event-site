@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700i,900i&display=swap');
 
+/* Blue is primary. Light blue and light pink are secondary. Yellow and pink are accent colors.
+ */
 body {
     padding: 0px;
     margin: 0px;
-    --bg: #C4C4C4;
-    --primary: white;
+    background: #FAEFE0;
+    --primary: #4F73AF;
+    --secondary-1: #BEC9D9;
+    --secondary-2: #E8C4C5;
+    --accent-1: #D33E4A;
+    --accent-2: #F6C059;   
     --secondary: #242424;
+    --text-light-bg: #3B4241;
+    --text-dark-bg: white;
     font-family: Roboto, sans-serif;
 }
 
@@ -28,6 +36,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    color: var(--text-light-bg);
 }
 
 #tagline {
@@ -40,7 +49,7 @@ body {
 #title-blk {
     width: 65%;
     height: 461px;
-    background-color: var(--bg);
+    background-color: var(--accent-2);
 }
 
 #title-txt {
@@ -71,9 +80,95 @@ body {
 }
 
 /* COOL TRANSITION */
+#anim-container {
+    height: 100%;
+}
+
 #cool-anim {
-    height: 200vh;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--secondary);
+}
+
+#txt-anim-1 {
+    top: calc(74px - 7vh);
+    left: 62px;
+    transform: rotate(20deg);
+}
+
+#txt-anim-2 {
+    top: calc(-3px - 7vh);
+    transform: rotate(-36deg);
+    left: 24px;
+}
+
+#txt-anim-3 {
+    transform: rotate(15deg);
+    top: calc(144px - 7vh);
+    left: 116px;
+}
+
+#stick-1 {
+    top: calc(50px - 15vh);
+    transform: rotate(20deg);
+}
+
+#stick-2 {
+    top: calc(117px - 15vh);
+    left: 13px;
+    transform: rotate(-36deg);
+}
+
+#stick-3 {
+    top: calc(200px - 15vh);
+    left: 20px;
+    transform: rotate(15deg);
+}
+
+#ball-1 {
+    top: calc(18px - 15vh);
+}
+
+#ball-2 {
+    top: calc(69px - 15vh);
+    left: 130px;
+}
+
+#ball-3 {
+    top: calc(156px - 15vh);
+}
+
+#ball-4 {
+    top: calc(228px - 15vh);
+    left: 270px;
+}
+
+/* ABOUT */
+#about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary);
+    color: var(--text-dark-bg); 
+}
+
+/* SCHEDULE */
+#schedule {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#about-container {
+    padding: 0px 15% 0px 15%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .em {
@@ -84,10 +179,16 @@ body {
     font-weight: bold;
 }
 
+.header {
+    font-size: 2rem;
+    padding: 0 10% 0 10%;
+}
+
 .btn {
     font-size: 1.5rem;
     background: var(--primary);
-    box-shadow: 0px 5px orange;
+    color: var(--text-dark-bg);
+    box-shadow: 0px 5px var(--secondary-1);
     border-radius: 50px;
     padding: 12px 20px 12px 20px;
     width: fit-content;
@@ -101,4 +202,39 @@ body {
 
 .chevron {
     margin-top: 20px;
+}
+
+.txt-anim {
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.stick {
+    margin: 0px;
+    position: relative;
+    background-color: white;
+    height: 2px;
+}
+
+.reveal-div {
+    
+}
+
+.ball {
+    position: relative;
+    float: left;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.ball-size-1 {    
+    width: 10px;
+    height: 10px;
+}
+
+.ball-size-2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
 }
