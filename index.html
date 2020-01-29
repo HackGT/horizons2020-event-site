@@ -21,19 +21,22 @@
             WHERE ART MEETS TECH
         </div>
         <div id="title-blk">
-            <div class="bold em" id="title-txt">
+            <div id="title-txt" class="lax bold em" data-lax-translate-y="0 0, vh -500">
                 HORIZONS
             </div>
-            <div class="em" id="title-deets">
+            <div id="title-illo" class="lax" data-lax-translate-y="0 0, vh -300">
+                <img src="assets/computer.svg" alt="qute computer monitor">
+            </div>
+            <div id="title-deets" class="lax em" data-lax-translate-y="0 0, vh -500">
                 GEORGIA TECH <br>
                 INSTRUCTIONAL CENTER <br>
                 APRIL 5TH-6TH
             </div>
-            <div class="btn bold em" id="title-register-btn">
+            <div id="title-register-btn" class="lax btn bold em" data-lax-translate-y="0 0, vh -500">
                 REGISTER
             </div>
-            <div id="title-chevron" class="chevron">
-                <svg height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            <div id="title-chevron" class="lax chevron" data-lax-translate-y="0 0, vh -300">
+                <svg class="chevvyin" height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256"
                     style="enable-background:new 0 0 256 256;" xml:space="preserve">
                     <g>
@@ -49,11 +52,25 @@
     <section id="anim-container">
         <div id="cool-anim">
             <!-- insert cool animation here -->
+            <!-- data-lax-rotate="vh 20, (2*vh) 20"
+                    data-lax-translate-y="vh 0, (2*vh) 100"
+                    data-lax-translate-x="vh 0, (2*vh) 100" -->
             <div id="stick-anim">
                 <div id="txt-anim-1" class="lax txt-anim" data-lax-opacity="vh 0, (2*vh) 1">art</div>
                 <div id="txt-anim-2" class="lax txt-anim" data-lax-opacity="(2*vh) 0, (3*vh) 1">is</div>
                 <div id="txt-anim-3" class="lax txt-anim" data-lax-opacity="(3*vh) 0, (4*vh) 1">expression</div>
-                <div class="reveal-div"></div>
+                <div id="reveal-1" class="lax reveal-div" 
+                    data-lax-rotate="vh 20, (2*vh) 20"
+                    data-lax-translate-x="vh 0, (2*vh) 200"
+                    ></div>
+                <div id="reveal-2" class="lax reveal-div"
+                    data-lax-rotate="(2*vh) -36, (3*vh) -36"
+                    data-lax-translate-x="(2*vh) 0, (3*vh) -200"
+                ></div>
+                <div id="reveal-3" class="lax reveal-div"
+                    data-lax-rotate="(3*vh) 15, (4*vh) 15"
+                    data-lax-translate-x="(3*vh) 0, (4*vh) 350"
+                ></div>
                 <div id="stick-1" class="stick" style="width: 150px"></div>
                 <div id="ball-1" class="ball ball-size-1"></div>
                 <div id="ball-2" class="ball ball-size-1"></div>
@@ -88,6 +105,7 @@
     </section> 
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script>
+        // from https://github.com/alexfoxy/laxxx
         window.onload = function () {
             lax.setup() // init
 
