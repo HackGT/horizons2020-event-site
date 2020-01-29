@@ -33,29 +33,50 @@
                 REGISTER
             </div>
             <div id="title-chevron" class="chevron">
-                <svg height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                <svg height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256"
+                    style="enable-background:new 0 0 256 256;" xml:space="preserve">
                     <g>
                         <g>
-                            <polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		" />
+                            <polygon
+                                points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		" />
                         </g>
                     </g>
                 </svg>
             </div>
         </div>
     </section>
-    <section id="cool-anim">
-        <!-- insert cool animation here -->
-        <div id="stick-anim">
-            <div id="stick-1" class="stick" style="width: 150px"></div>
-            <div id="ball-1" class="ball ball-size-1"></div>
-            <div id="ball-2" class="ball ball-size-1"></div>
-            <div id="stick-2" class="stick" style="width: 150px"></div>
-            <div id="ball-3" class="ball ball-size-1"></div>
-            <div id="stick-3" class="stick" style="width: 300px"></div>
-            <div id="ball-4" class="ball ball-size-2"></div>
+    <div id="anim-container">
+        <div id="cool-anim">
+            <!-- insert cool animation here -->
+            <div id="stick-anim">
+                <div id="txt-anim-1" class="lax txt-anim" data-lax-opacity="vh 0, (2*vh) 1">art</div>
+                <div id="txt-anim-2" class="lax txt-anim" data-lax-opacity="(2*vh) 0, (3*vh) 1">is</div>
+                <div id="txt-anim-3" class="lax txt-anim" data-lax-opacity="(3*vh) 0, (4*vh) 1">expression</div>
+                <div class="reveal-div"></div>
+                <div id="stick-1" class="stick" style="width: 150px"></div>
+                <div id="ball-1" class="ball ball-size-1"></div>
+                <div id="ball-2" class="ball ball-size-1"></div>
+                <div id="stick-2" class="stick" style="width: 150px"></div>
+                <div id="ball-3" class="ball ball-size-1"></div>
+                <div id="stick-3" class="stick" style="width: 300px"></div>
+                <div id="ball-4" class="ball ball-size-2"></div>
+            </div>
         </div>
-    </section>
+        <div style="height: 400vh; background-color: blue;"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script>
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }</script>
     <script src="index.js"></script>
 </body>
 

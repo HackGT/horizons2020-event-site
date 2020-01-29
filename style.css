@@ -80,45 +80,70 @@ body {
 }
 
 /* COOL TRANSITION */
+#anim-container {
+    height: 100%;
+}
+
 #cool-anim {
-    height: 200vh;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background: var(--secondary);
 }
 
+#txt-anim-1 {
+    top: calc(74px - 7vh);
+    left: 62px;
+    transform: rotate(20deg);
+}
+
+#txt-anim-2 {
+    top: calc(-3px - 7vh);
+    transform: rotate(-36deg);
+    left: 24px;
+}
+
+#txt-anim-3 {
+    transform: rotate(15deg);
+    top: calc(144px - 7vh);
+    left: 116px;
+}
+
 #stick-1 {
-    top: 50px;
+    top: calc(50px - 15vh);
     transform: rotate(20deg);
 }
 
 #stick-2 {
-    top: 117px;
+    top: calc(117px - 15vh);
     left: 13px;
     transform: rotate(-36deg);
 }
 
 #stick-3 {
-    top: 200px;
+    top: calc(200px - 15vh);
     left: 20px;
     transform: rotate(15deg);
 }
 
 #ball-1 {
-    top: 18px;
+    top: calc(18px - 15vh);
 }
 
 #ball-2 {
-    top: 69px;
+    top: calc(69px - 15vh);
     left: 130px;
 }
 
 #ball-3 {
-    top: 156px;
+    top: calc(156px - 15vh);
 }
 
 #ball-4 {
-    top: 228px;
+    top: calc(228px - 15vh);
     left: 270px;
 }
 
@@ -149,6 +174,12 @@ body {
 
 .chevron {
     margin-top: 20px;
+}
+
+.txt-anim {
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
 }
 
 .stick {
