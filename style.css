@@ -147,6 +147,29 @@ body {
     left: 270px;
 }
 
+/* ABOUT */
+#about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary);
+    color: var(--text-dark-bg); 
+}
+
+/* SCHEDULE */
+#schedule {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#about-container {
+    padding: 0px 15% 0px 15%;
+    display: flex;
+    justify-content: space-around;
+}
 
 .em {
     font-style: italic;
@@ -154,6 +177,11 @@ body {
 
 .bold {
     font-weight: bold;
+}
+
+.header {
+    font-size: 2rem;
+    padding: 0 10% 0 10%;
 }
 
 .btn {
@@ -187,6 +215,10 @@ body {
     position: relative;
     background-color: white;
     height: 2px;
+}
+
+.reveal-div {
+    
 }
 
 .ball {
