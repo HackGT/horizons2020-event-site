@@ -165,6 +165,25 @@ body {
     align-items: center; 
 }
 
+#to-be-announced {
+    position: relative;
+
+    top: 50px;
+
+    justify-content: center;
+    align-items: center; 
+    font-family: Roboto;
+
+    font-style: italic;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 28px;
+
+    color: #3B4241;
+}
+
+
+
 #about-container {
     padding: 0px 15% 0px 15%;
     display: flex;
