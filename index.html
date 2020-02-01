@@ -10,38 +10,42 @@
 </head>
 
 <body>
-    <!-- <section id="nav">
+    <section id="nav">
         <ul>
-            <li>Home</li>
-            <li>About</li>
+            <li><a href="#splash">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#schedule">schedule</a></li>
+            <li><a href="#faq">faq</a></li>
+            <li>about</li>
         </ul>
-    </section> -->
+        <progress value="0" id="scroll-indicator"></progress>
+    </section>
     <section id="splash">
         <div class="bold em" id="tagline">
             WHERE ART MEETS TECH
         </div>
         <div id="title-blk">
             <div id="title-txt" class="lax bold em" data-lax-translate-y="0 0, vh -500">
-                HORIZONS
+                Horizons
             </div>
             <div id="title-illo" class="lax" data-lax-translate-y="0 0, vh -300">
                 <img src="assets/computer.svg" alt="qute computer monitor">
             </div>
-            <div id="title-deets" class="lax em" data-lax-translate-y="0 0, vh -500">
+            <div id="title-deets" class="lax" data-lax-translate-y="0 0, vh -500">
                 GEORGIA TECH <br>
                 INSTRUCTIONAL CENTER <br>
                 APRIL 5TH-6TH
             </div>
-            <div id="title-register-btn" class="lax btn bold em" data-lax-translate-y="0 0, vh -500">
+            <div id="title-register-btn" class="lax btn bold" data-lax-translate-y="0 0, vh -500">
                 REGISTER
             </div>
             <div id="title-chevron" class="lax chevron" data-lax-translate-y="0 0, vh -300">
-                <svg class="chevvyin" height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256"
-                    style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                <svg class="chevvyin" height="50px" width="50px" version="1.1" id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
                     <g>
                         <g>
-                            <polygon
+                            <polygon fill="#3b4241"
                                 points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 		" />
                         </g>
                     </g>
@@ -56,21 +60,16 @@
                     data-lax-translate-y="vh 0, (2*vh) 100"
                     data-lax-translate-x="vh 0, (2*vh) 100" -->
             <div id="stick-anim">
-                <div id="txt-anim-1" class="lax txt-anim" data-lax-opacity="vh 0, (2*vh) 1">art</div>
+                <div id="txt-anim-1" class="lax txt-anim bold" data-lax-opacity="vh 0, (2*vh) 1">art</div>
                 <div id="txt-anim-2" class="lax txt-anim" data-lax-opacity="(2*vh) 0, (3*vh) 1">is</div>
-                <div id="txt-anim-3" class="lax txt-anim" data-lax-opacity="(3*vh) 0, (4*vh) 1">expression</div>
-                <div id="reveal-1" class="lax reveal-div" 
-                    data-lax-rotate="vh 20, (2*vh) 20"
-                    data-lax-translate-x="vh 0, (2*vh) 200"
-                    ></div>
-                <div id="reveal-2" class="lax reveal-div"
-                    data-lax-rotate="(2*vh) -36, (3*vh) -36"
-                    data-lax-translate-x="(2*vh) 0, (3*vh) -200"
-                ></div>
-                <div id="reveal-3" class="lax reveal-div"
-                    data-lax-rotate="(3*vh) 15, (4*vh) 15"
-                    data-lax-translate-x="(3*vh) 0, (4*vh) 350"
-                ></div>
+                <div id="txt-anim-3" class="lax txt-anim bold accent" data-lax-opacity="(3*vh) 0, (4*vh) 1">expression
+                </div>
+                <div id="reveal-1" class="lax reveal-div" data-lax-rotate="vh 20, (2*vh) 20"
+                    data-lax-translate-x="vh 0, (2*vh) 200"></div>
+                <div id="reveal-2" class="lax reveal-div" data-lax-rotate="(2*vh) -36, (3*vh) -36"
+                    data-lax-translate-x="(2*vh) 0, (3*vh) -200"></div>
+                <div id="reveal-3" class="lax reveal-div" data-lax-rotate="(3*vh) 15, (4*vh) 15"
+                    data-lax-translate-x="(3*vh) 0, (4*vh) 350"></div>
                 <div id="stick-1" class="stick" style="width: 150px"></div>
                 <div id="ball-1" class="ball ball-size-1"></div>
                 <div id="ball-2" class="ball ball-size-1"></div>
@@ -83,26 +82,121 @@
         <div style="height: 400vh; background-color: blue;"></div>
     </section>
     <section id="about">
-        <div class="lax" data-lax-translate-y="(5*vh) 1000, (6*vh) 0" id="about-container">
+        <div class="lax" data-lax-translate-y="(4*vh) 600, (6*vh) 0" id="about-container">
             <div class="bold em header">
                 about
             </div>
-                There's a new event on the horizon! HackGT is presenting an Art+Tech make-a-thon called Horizons,
-                    where participants get to brainstorm, design, and create projects integrating art and technology. At
-                    the end of the event, we'll have a showcase of all the projects and judges will vote for specific
-                    categories of prizes.
-                    <br><br>
-                Feel unprepared? Don't worry! We'll have plenty of mentors on hand to help with projects,
-                    presentations, idea creation, and technical difficulties!
-            </div>
+            There's a new event on the horizon! HackGT is presenting an Art+Tech make-a-thon called Horizons,
+            where participants get to brainstorm, design, and create projects integrating art and technology. At
+            the end of the event, we'll have a showcase of all the projects and judges will vote for specific
+            categories of prizes.
+            <br><br>
+            Feel unprepared? Don't worry! We'll have plenty of mentors on hand to help with projects,
+            presentations, idea creation, and technical difficulties!
+        </div>
         </div>
     </section>
     <section id="schedule">
-        <div class="lax" data-lax-translate-y="(6*vh) 1000, (7*vh) 0" id="schedule-container">
+        <div class="lax" data-lax-translate-y="(6*vh) 600, (7*vh) 0" id="schedule-container">
             <div class="bold em header">Schedule</div>
-    	    Coming up!
+            Coming up!
         </div>
-    </section> 
+    </section>
+    <section id="faq">
+        <div class="bold em header center lax" data-lax-translate-y="(8*vh) 400, (8.75*vh) 0">questions</div>
+        <div class="lax" data-lax-translate-y="(8*vh) 400, (8.75*vh) 0" id="faq-container">
+            <div>
+                <div class="q">
+                    <p class="bold">What is a make-a-thon?</p>
+                    <p>A make-a-thon is an event where
+                        teams of students spend a weekend
+                        utilizing resources and support
+                        provided by HackGT to bring their
+                        ideas to life. </p>
+                </div>
+                <div class="q">
+                    <p class="bold">How much will this cost?</p>
+                    <p>Horizons is completely free! All
+                        you need to do is show up! We will
+                        provide the food, swag, and any
+                        other resources you need, so you
+                        can focus on your creation!</p>
+                </div>
+                <div class="q">
+                    <p class="bold">Who can attend?</p>
+                    <p>Anyone 18 years or older can
+                        attend! With the resources
+                        provided and beginner-friendly
+                        workshops, students from any
+                        background can come and enjoy!</p>
+                </div>
+                <div class="q">
+                    <p class="bold">What should I bring?</p>
+                    <p>All you need to bring is yourself
+                        and your laptop! Feel free to
+                        bring anything else (art supplies, tools, etc...) that you think
+                        would be helpful.</p>
+                </div>
+                <div class="q">
+                    <p class="bold">Where is Horizons?</p>
+                    <p>759 Ferst Dr NW, Atlanta, GA 30318</p>
+                </div>
+            </div>
+            <div>
+                <img id="faq-illo" src="assets/mouse.png" alt="mouse running on a disc">
+                <div class="q">
+                    <p class="bold">When can I register?</p>
+                    <p>Registration is open! You can do so here!</p>
+                </div>
+                <div class="q">
+                    <p class="bold">How long is the make-a-thon?</p>
+                    <p>Horizons will be a two day event:
+                        Day 1 (Friday, April 5th) will start
+                        at 6 PM and finish at 11 PM. Day 2
+                        (Saturday, April 6th) will begin at
+                        9 AM and conclude by 10:30 PM.</p>
+                </div>
+                <div class="q">
+                    <p class="bold">What resources will be there?</p>
+                    <p>Good question! We'll be providing lots of
+                        hardware (Arduinos,
+                        Oculus Rifts, Raspberry Pis) and
+                        tools & supplies (paints, canvas, etc...)! A
+                        full list of available supplies is coming soon.</p>
+                </div>
+                <div class="q">
+                    <p class="bold">What size can teams be?</p>
+                    <p>The max team size is 4 people.</p>
+                </div>
+                <div class="q">
+                    <p class="bold">What if I don't have a team?</p>
+                    <p>We will have a mixer at the start
+                        of the event to help you find a
+                        team!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="express-yourself">
+        <div id="ey-container">
+            <div id="ey-head" class="bold em header">
+                express yourself
+            </div>
+            <div id="ey-caption"> In vitae vulputate turpis. Aliquam rutrum est a leo lobortis vestibulum. Maecenas pulvinar rhoncus magna
+                blandit consequat. Nam a quam ornare, mattis dui sed, ultricies sapien. </div>
+            <div id="ey-quote">
+                <img id="ey-illo" src="assets/bunny.svg" alt="bunny watching television">
+                <p> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis tortor at malesuada
+                    pulvinar.
+                    Donec quis imperdiet orci.” </p>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <section id="footer">
+
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script>
         // from https://github.com/alexfoxy/laxxx
