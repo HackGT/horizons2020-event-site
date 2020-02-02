@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700i,900i&display=swap");
 @import url("https://use.typekit.net/lrr4iqb.css");
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,800,800i&display=swap');
+@font-face {
+  font-family: og-emoji;
+  src: url(assets/fonts/og-dcm-emoji.ttf);
+}
 
 /* Blue is primary. Light blue and light pink are secondary. Yellow and pink are accent colors.
 #242425
@@ -9,6 +13,14 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 body {
@@ -75,6 +87,10 @@ body {
           appearance: none;
           height: 5px;
   border-radius: 10px;
+}
+
+#ey {
+  font-family: og-emoji, sans-serif;
 }
 
 progress::-webkit-progress-bar {
@@ -205,6 +221,10 @@ progress::-moz-progress-bar {
   transform: rotate(15deg);
   top: 144px;
   left: 116px;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2v9y0dukr6mq2.cloudfront.net%2Fvideo%2Fthumbnail%2FrjY8-Q0in1fmnvx%2Frainbow-spectral-gradient-moving-slowly-left-seamless-loop_b9eefoqzql_thumbnail-full01.png&f=1&nofb=1");
 }
 
 #stick-1 {
@@ -289,6 +309,10 @@ progress::-moz-progress-bar {
   align-items: center;
 }
 
+#schedule-container > div:nth-child(2) {
+  text-align: center;
+}
+
 /* FAQ */
 #faq-container {
   padding: 30px 10% 0px 10%;
@@ -317,7 +341,7 @@ progress::-moz-progress-bar {
 }
 
 #ey-container {
-  padding: 5% 10% 0px 10%;
+  padding: 5% 10% 0px 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -325,13 +349,16 @@ progress::-moz-progress-bar {
 }
 
 #ey-caption {
-  padding-top: 5%;
+  padding-top: 7%;
+  font-size: 1.5em;
 }
 
 #ey-quote {
   display: flex;
 justify-content: center;
 align-items: center;
+font-size: 1.25rem;
+font-style: italic;
 }
 
 #ey-illo {
@@ -340,8 +367,35 @@ align-items: center;
 
 /* Footer */
 #footer {
+  color: var(--text-dark-bg);
   height: 200px;
   background: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#social img {
+  height: 35px;
+}
+
+#footer > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#crazy {
+  animation: pop-chev 5s infinite;
 }
 
 .em {
@@ -498,7 +552,7 @@ align-items: center;
   }
 
   15% {
-    transform: scale(1.5, 1.5);
+    transform: scale(1.1, 1.1);
   }
   
   20% {

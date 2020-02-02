@@ -10,13 +10,27 @@
 </head>
 
 <body>
+    <!-- 
+                   __  _
+       .-.'  `; `-._  __  _
+      (_,         .-:'  `; `-._
+    ,'o"(        (_,           )
+   (__,-'      ,'o"(            )>
+      (       (__,-'            )
+       `-'._.--._(             )
+          |||  |||`-'._.--._.-'
+                     |||  |||
+    
+    howdy! enjoy your soujourn :) 
+    forgive us for the not so pretty parts :(
+     -->
     <section id="nav">
         <ul>
             <li><a href="#splash">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#schedule">schedule</a></li>
             <li><a href="#faq">faq</a></li>
-            <li>about</li>
+            <li><a id="ey" class="og" href="#express-yourself">😃</a></li>
         </ul>
         <progress value="0" id="scroll-indicator"></progress>
     </section>
@@ -62,7 +76,8 @@
             <div id="stick-anim">
                 <div id="txt-anim-1" class="lax txt-anim bold" data-lax-opacity="vh 0, (2*vh) 1">art</div>
                 <div id="txt-anim-2" class="lax txt-anim" data-lax-opacity="(2*vh) 0, (3*vh) 1">is</div>
-                <div id="txt-anim-3" class="lax txt-anim bold accent" data-lax-opacity="(3*vh) 0, (4*vh) 1">expression
+                <div id="txt-anim-3" class="lax txt-anim bold" data-lax-bg-pos-x="(3*vh) (0), (6*vh) 1500"
+                    data-lax-opacity="(3*vh) 0, (4*vh) 1">expression
                 </div>
                 <div id="reveal-1" class="lax reveal-div" data-lax-rotate="vh 20, (2*vh) 20"
                     data-lax-translate-x="vh 0, (2*vh) 200"></div>
@@ -82,7 +97,7 @@
         <div style="height: 400vh; background-color: blue;"></div>
     </section>
     <section id="about">
-        <div class="lax" data-lax-translate-y="(4*vh) 600, (6*vh) 0" id="about-container">
+        <div class="lax" data-lax-translate-y="(5*vh) 400, (6*vh) 0" id="about-container">
             <div class="bold em header">
                 about
             </div>
@@ -99,12 +114,12 @@
     <section id="schedule">
         <div class="lax" data-lax-translate-y="(6*vh) 600, (7*vh) 0" id="schedule-container">
             <div class="bold em header">Schedule</div>
-            Coming up!
+            <div>Coming soon!</div>
         </div>
     </section>
     <section id="faq">
-        <div class="bold em header center lax" data-lax-translate-y="(8*vh) 400, (8.75*vh) 0">questions</div>
-        <div class="lax" data-lax-translate-y="(8*vh) 400, (8.75*vh) 0" id="faq-container">
+        <div class="bold em header center lax" data-lax-translate-y="(8*vh) 400, (8.25*vh) 0">questions</div>
+        <div class="lax" data-lax-translate-y="(8.25*vh) 400, (9.25*vh) 0" id="faq-container">
             <div>
                 <div class="q">
                     <p class="bold">What is a make-a-thon?</p>
@@ -179,12 +194,13 @@
     </section>
     <section id="express-yourself">
         <div id="ey-container">
-            <div id="ey-head" class="bold em header">
+            <div class="bold em header lax" data-lax-translate-y="(9*vh) 400, (10*vh) 0" id="ey-head">
                 express yourself
             </div>
-            <div id="ey-caption"> In vitae vulputate turpis. Aliquam rutrum est a leo lobortis vestibulum. Maecenas pulvinar rhoncus magna
+            <div class="lax" data-lax-translate-y="(9*vh) 400, (10*vh) 0" id="ey-caption"> In vitae vulputate turpis.
+                Aliquam rutrum est a leo lobortis vestibulum. Maecenas pulvinar rhoncus magna
                 blandit consequat. Nam a quam ornare, mattis dui sed, ultricies sapien. </div>
-            <div id="ey-quote">
+            <div class="lax" data-lax-translate-y="(9.5*vh) 400, (10.5*vh) 0" id="ey-quote">
                 <img id="ey-illo" src="assets/bunny.svg" alt="bunny watching television">
                 <p> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis tortor at malesuada
                     pulvinar.
@@ -195,7 +211,29 @@
         </div>
     </section>
     <section id="footer">
-
+        <div>
+            <div id="social">
+                <a href="https://www.instagram.com/thehackgt/?hl=en">
+                    <img src="assets/social/insta.svg">
+                </a>
+                <a href="https://www.facebook.com/TheHackGT/">
+                    <img src="assets/social/fb.svg">
+                </a>
+                <a href="https://twitter.com/thehackgt?lang=en">
+                    <img src="assets/social/twitter.svg">
+                </a>
+                <a href="https://github.com/HackGT">
+                    <img src="assets/social/github.svg">
+                </a>
+                <a href="https://hack.gt/">
+                    <img src="assets/social/website.svg">
+                </a>
+            </div>
+        </div>
+        <div>
+            <a id="crazy" href="https://1ntegr8-keelaiout.glitch.me/" style="font-family: monospace; padding: 20px;" target="_blank">here's to the crazy ones</a>
+            <div>Made with &hearts; by the HackGT Team</div>
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script>
