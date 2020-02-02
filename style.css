@@ -592,6 +592,14 @@ font-style: italic;
   #faq {
     height: 200vh;
   }
+
+  #faq {
+    height: 300vh;
+  }
+
+  #faq-container {
+    flex-direction: column;
+  }
 }
 
 
@@ -599,11 +607,75 @@ font-style: italic;
   #title-illo {
     left: calc(-20% + 25vw);
   }
+
+  #about-container {
+    flex-direction: column;
+  }
+
+  #about-container > div {
+    padding-bottom: 30px; 
+  }
+
+  #express-yourself {
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #ey-caption {
+    font-size: 1.5rem;
+  }
+
+  #ey-quote {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  #ey-illo {
+    width: 200px;
+  }
 }
 
 @media (max-width: 350px) {
   #title-illo {
     left: calc(-20% + 18vw);
+  }
+
+  #faq {
+    height: 300vh;
+  }
+
+  #faq-container {
+    font-size: 1rem;
+  }
+
+  #faq-illo {
+    width: 200px;
+  }
+
+  #express-yourself {
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #ey-container {
+    font-size: 1rem;
+  }
+
+  #ey-caption {
+    font-size: 1rem;
+  }
+
+  #ey-quote {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  #ey-illo {
+    width: 200px;
   }
 }
 
