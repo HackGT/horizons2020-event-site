@@ -15,13 +15,7 @@ html {
   width: 100vw;
 }
 
-a {
-  text-decoration: none;
-}
 
-a:visited {
-  color: inherit;
-}
 
 body {
   padding: 0px;
@@ -40,6 +34,15 @@ body {
   --title-font: sauna-swash-new, sans-serif;
   --body-font: Raleway, sans-serif;
   font-family: var(--body-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-light-bg); 
+}
+
+a:visited {
+  color: inherit;
 }
 
 /* NAV */
