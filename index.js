@@ -24,6 +24,7 @@ document.addEventListener("scroll", () => {
     scrollIndicator.value = scrolled;
 });
 
+// code to determine if parallax is needed or not
 window.addEventListener("resize", function() {
 	lax.updateElements()
 });
@@ -55,3 +56,5 @@ const ey = document.getElementById("ey");
 setInterval(() => {
     ey.innerHTML = emojis[Math.floor((Math.random() * emojis.length))];
 }, 1000);
+
+
