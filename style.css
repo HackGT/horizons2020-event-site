@@ -50,6 +50,9 @@ a:visited {
   right: calc(-160px + 10vw);
   height: 100vh;
   z-index: 1000;
+}
+
+#nav a {
   color: var(--text-light-bg);
 }
 

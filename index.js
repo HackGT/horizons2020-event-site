@@ -8,7 +8,7 @@ const clogMsg = "👋 konnichiwa";
 console.log(`%c ${clogMsg}`, clogStyle);
 
 const scrollIndicator = document.getElementById("scroll-indicator");
-const navBar = document.getElementById("nav");
+const navBar = document.querySelectorAll("#nav a");
 
 document.addEventListener("scroll", () => {
     const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -16,9 +16,13 @@ document.addEventListener("scroll", () => {
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     if (winScroll > 0.5 * vh && winScroll < 6.35 * vh
         || winScroll > 10 * vh) {
-        navBar.style.color = "var(--text-dark-bg)";
+            navBar.forEach(e => {
+                e.style.color = "var(--text-dark-bg)";
+            });
     } else {
-        navBar.style.color = "var(--text-light-bg)";
+        navBar.forEach(e => {
+            e.style.color = "var(--text-light-bg)"; 
+        });
     }
     const scrolled = (winScroll / height);
     scrollIndicator.value = scrolled;
