@@ -304,6 +304,7 @@ progress::-moz-progress-bar {
   align-items: center;
   background: var(--secondary);
   color: var(--text-dark-bg);
+  scroll-snap-type: y mandatory;
 }
 
 #about-container {
@@ -314,10 +315,11 @@ progress::-moz-progress-bar {
 
 /* SCHEDULE */
 #schedule {
-  height: 200vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-snap-type: y mandatory; 
 }
 
 #schedule-container > div:nth-child(2) {
@@ -336,6 +338,7 @@ progress::-moz-progress-bar {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  scroll-snap-type: y mandatory;
 }
 
 #faq-illo {
@@ -349,6 +352,7 @@ progress::-moz-progress-bar {
   height: 100vh;
   background-color: var(--primary);
   color: var(--text-dark-bg);
+  scroll-snap-type: y mandatory;
 }
 
 #ey-container {
@@ -362,6 +366,7 @@ progress::-moz-progress-bar {
 #ey-caption {
   padding-top: 7%;
   font-size: 1.5em;
+  z-index: 1000;
 }
 
 #ey-quote {
@@ -394,8 +399,18 @@ progress::-moz-progress-bar {
   justify-content: space-around;
 }
 
+#social {
+  display: flex;
+  z-index: 1000;
+}
+
 #social img {
   height: 35px;
+}
+
+#social a {
+  height: 35px;
+  padding: 0 5px 0 5px;
 }
 
 #footer > div:nth-child(2) {
@@ -620,7 +635,7 @@ progress::-moz-progress-bar {
   #tagline {
     top: 0px;
     margin-top: 15px;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   #title-deets {
@@ -637,6 +652,7 @@ progress::-moz-progress-bar {
 
   #chev {
     height: 30px;
+    padding: 10px;
   }
 
   #about-container {
@@ -669,6 +685,10 @@ progress::-moz-progress-bar {
 
   #ey-illo {
     width: 200px;
+  }
+
+  #schedule {
+    height: 100vh;
   }
 }
 

@@ -15,7 +15,7 @@ document.addEventListener("scroll", () => {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     if (winScroll > 0.5 * vh && winScroll < 6.35 * vh
-        || winScroll > 10 * vh) {
+        || winScroll > 9 * vh) {
             navBar.forEach(e => {
                 e.style.color = "var(--text-dark-bg)";
             });
@@ -30,6 +30,8 @@ document.addEventListener("scroll", () => {
 
 // code to determine if parallax is needed or not
 window.addEventListener("resize", function() {
+    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0); 
+    const vw = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 	lax.updateElements()
 });
 
