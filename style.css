@@ -35,7 +35,6 @@ body {  padding: 0px;
 
 a {
   text-decoration: none;
-  color: var(--text-light-bg); 
 }
 
 a:visited {
@@ -51,6 +50,7 @@ a:visited {
   right: calc(-160px + 10vw);
   height: 100vh;
   z-index: 1000;
+  color: var(--text-light-bg);
 }
 
 #nav > ul {
