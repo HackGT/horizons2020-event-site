@@ -379,7 +379,7 @@ progress::-moz-progress-bar {
 }
 
 #ey-illo {
-  width: calc(1000px - 1vw);
+  width: 500px;
 }
 
 /* Footer */
@@ -675,16 +675,16 @@ progress::-moz-progress-bar {
   }
 
   #ey-caption {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   #ey-quote {
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   #ey-illo {
-    width: 200px;
+    width: calc(300px - 2vw);
   }
 
   #schedule {
