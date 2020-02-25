@@ -315,7 +315,7 @@ progress::-moz-progress-bar {
 
 /* SCHEDULE */
 #schedule {
-  height: 100vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -323,17 +323,44 @@ progress::-moz-progress-bar {
   scroll-snap-type: y mandatory; 
 }
 
+#schedule-container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 #schedule-container > div:nth-child(2) {
   text-align: center;
 }
 
-/* FAQ */
-#faq-container {
-  padding: 30px 10% 0px 10%;
-  display: flex;
+#schedule ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#schedule li {
+    padding: 2%;
+}
+
+#schedule tr > td:nth-child(1) {
+    padding-right: 10%;
+    font-weight: bold;
+}
+
+.s-divider {
+    padding: 5% 0px;
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 #schedule-container2 {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+
+/* FAQ */
+#faq-container {
   padding: 30px 10% 0px 10%;
   display: flex;
 }
