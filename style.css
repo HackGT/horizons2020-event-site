@@ -633,6 +633,8 @@ progress::-moz-progress-bar {
 }
 
 /* Media queries */
+
+
 @media (max-width: 920px) {
   #title-blk {
     text-align: center;
@@ -671,6 +673,13 @@ progress::-moz-progress-bar {
 }
 
 
+@media (max-height: 700px) {
+    #schedule {
+        height: fit-content;
+        margin-bottom: 10%;
+    }
+}
+
 @media (max-width: 530px) {
   #tagline {
     top: 0px;
@@ -680,8 +689,7 @@ progress::-moz-progress-bar {
 
   #title-deets {
     font-size: 0.75rem;
-  }
-
+  } 
   #title-illo {
     left: calc(-20% + 25vw);
   }
@@ -777,4 +785,4 @@ progress::-moz-progress-bar {
     width: 200px;
   }
 }
-© 2020 GitHu
+
