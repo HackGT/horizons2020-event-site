@@ -354,6 +354,8 @@ progress::-moz-progress-bar {
 
 #schedule-container2 {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 75%;
 }
@@ -726,7 +728,7 @@ progress::-moz-progress-bar {
   }
 
   #schedule {
-    height: 150vh;
+    height: 200vh;
   }
 }
 
