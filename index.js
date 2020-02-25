@@ -32,7 +32,7 @@ document.addEventListener("scroll", () => {
 window.addEventListener("resize", function() {
     const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0); 
     const vw = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-	lax.updateElements()
+    lax.updateElements()
 });
 
 const emojis = [
@@ -62,5 +62,3 @@ const ey = document.getElementById("ey");
 setInterval(() => {
     ey.innerHTML = emojis[Math.floor((Math.random() * emojis.length))];
 }, 1000);
-
-
