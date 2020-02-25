@@ -325,7 +325,6 @@ progress::-moz-progress-bar {
 
 #schedule-container {
     margin-top: 2%;
-    margin-bottom: 2%;
 }
 
 #schedule-container > div:nth-child(2) {
@@ -727,7 +726,7 @@ progress::-moz-progress-bar {
   }
 
   #schedule {
-    height: 100vh;
+    height: 150vh;
   }
 }
 
