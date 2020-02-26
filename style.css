@@ -315,15 +315,49 @@ progress::-moz-progress-bar {
 
 /* SCHEDULE */
 #schedule {
-  height: 100vh;
+  height: 200vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   scroll-snap-type: y mandatory; 
 }
 
+#schedule-container {
+    margin-top: 2%;
+}
+
 #schedule-container > div:nth-child(2) {
   text-align: center;
+}
+
+#schedule ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#schedule li {
+    padding: 2%;
+}
+
+#schedule tr > td:nth-child(1) {
+    padding-right: 10%;
+    font-weight: bold;
+}
+
+.s-divider {
+    padding: 5% 0px;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+#schedule-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
 }
 
 /* FAQ */
@@ -513,7 +547,13 @@ progress::-moz-progress-bar {
   position: relative;
   width: 90%;
 }
-
+.ss {
+  position: relative;
+  width: 100%;
+  height:0%;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
 /* Animations */
 @keyframes slidein-from-left {
   from {
@@ -593,6 +633,8 @@ progress::-moz-progress-bar {
 }
 
 /* Media queries */
+
+
 @media (max-width: 920px) {
   #title-blk {
     text-align: center;
@@ -631,6 +673,13 @@ progress::-moz-progress-bar {
 }
 
 
+@media (max-height: 700px) {
+    #schedule {
+        height: fit-content;
+        margin-bottom: 10%;
+    }
+}
+
 @media (max-width: 530px) {
   #tagline {
     top: 0px;
@@ -640,8 +689,7 @@ progress::-moz-progress-bar {
 
   #title-deets {
     font-size: 0.75rem;
-  }
-
+  } 
   #title-illo {
     left: calc(-20% + 25vw);
   }
@@ -688,7 +736,7 @@ progress::-moz-progress-bar {
   }
 
   #schedule {
-    height: 100vh;
+    height: 200vh;
   }
 }
 
