@@ -315,7 +315,7 @@ progress::-moz-progress-bar {
 
 /* SCHEDULE */
 #schedule {
-  height: 200vh;
+  height: 250vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
